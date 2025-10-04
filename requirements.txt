@@ -1,0 +1,20 @@
+# python=3.12
+
+datasets
+jupyter
+matplotlib
+numpy
+pandas
+# pydantic
+# pydantic-cli
+# pydantic-yaml
+scikit-learn
+scipy
+# tensorboard
+torch
+torchtext
+transformers
+tqdm
+
+
+
