@@ -5,9 +5,12 @@ jupyter
 matplotlib
 numpy
 pandas
-# pydantic
-# pydantic-cli
-# pydantic-yaml
+pydantic
+pydantic-settings
+pydantic-settings-yaml
+pydantic-yaml
+python-dotenv
+pyyaml
 scikit-learn
 scipy
 # tensorboard
