@@ -1,0 +1,7 @@
+
+data:
+      root_dir_path: <path-to-data-directory>
+      arc_v1_dir_path: <path-to-arc-v1-directory>
+      arc_v2_dir_path: <path-to-arc-v2-directory>
+
+

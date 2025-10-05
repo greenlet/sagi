@@ -220,4 +220,7 @@ __marimo__/
 # Custom
 data/
 
+# Config
+config/*.yaml
+!config/*.example.yaml
 
