@@ -9,8 +9,10 @@ from pydantic_settings_yaml import YamlBaseSettings
 
 class DataConfig(BaseModel):
     root_dir_path: Path
-    arc_v1_dir_path: Path
-    arc_v2_dir_path: Path
+    arc_v1_data_dir_path: Path
+    arc_v2_data_dir_path: Path
+    arc_v1_repo_dir_path: Path
+    arc_v2_repo_dir_path: Path
 
 
 class MainConfig(YamlBaseSettings):

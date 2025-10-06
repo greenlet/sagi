@@ -9,6 +9,7 @@ pydantic
 pydantic-settings
 pydantic-settings-yaml
 pydantic-yaml
+python-deepcompare
 python-dotenv
 pyyaml
 scikit-learn
