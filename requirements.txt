@@ -3,6 +3,7 @@
 datasets
 jupyter
 matplotlib
+networkx
 numpy
 pandas
 pydantic

@@ -1,0 +1,26 @@
+
+init() {
+    cur_ctx.i = alloc(int, 0);
+}
+inc() {
+    cur_ctx.i++;
+}
+stop_criteria() -> bool {
+    return cur_ctx.i == cur_ctx.n;
+}
+deinit() {
+    dealloc(cur_ctx.i);
+}
+fn() {
+    print(cur_ctx.i);
+}
+
+loop(init(), inc(), stop_criteria(), deinit(), fn())
+
+
+int i = 0;
+
+
+
+root_context
+

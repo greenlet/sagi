@@ -1,0 +1,40 @@
+
+// Classic
+fun bubble_sort(l: list[int]) {
+    for(i: int = 1; i < l.size(); i++) {
+        j: int = i;
+        while (j > 0 && l[j] < l[j - 1]) {
+            t: int = l[j];
+            l[j] = l[j + 1];
+            l[j + 1] = t;
+            j++;
+        }
+    }
+}
+
+
+// More functonic style
+fun swap(l: list[int], i: int, j: int) {
+    t: int = l[i];
+    l[i] = l[j];
+    l[j] = t;
+}
+
+fun sink_lower(l: list[int], i: int) {
+    for (j: int = i; j > 0 && l[j] < l[j - 1]; j++) {
+        swap(l, j - 1, j);
+    }
+}
+
+fun bubble_sort(l: list[int]) {
+    for (i: int = 1; i < l.size(); i++) {
+        sink_lower(l, i);
+    }
+}
+
+Global
+    bubble_sort
+        raise_first_if_lower
+            swap
+
+
